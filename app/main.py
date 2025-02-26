@@ -1,8 +1,8 @@
 # app/main.py
 from fastapi import FastAPI, Depends, HTTPException
 from pydantic import BaseModel
-from auth import verify_token  # Import authentication module
-from security import rate_limiter  # Import security features
+from app.authentication import verify_token  # Import auth module
+from app.security_utils import rate_limiter  # Import security features
 import logging
 
 # Initialise FastAPI app
